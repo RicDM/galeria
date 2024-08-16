@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  background-image: url("../assets/back.png");
+  background-color: #242424;
+  padding: 5vw;
+}
+
+.container .title {
+  width: 20%;
+  padding-right: 60px;
+}
+.container .title h1 {
+  font-family: "Hepta Slab";
+  font-weight: 400;
+  color: white;
+  font-size: 48px;
+}
+.container .title img {
+  padding-top: 20px;
+}
+.images {
+  display: grid;
+  grid-template: auto / auto;
+  gap: 2.1vw;
+}
+
+.image-1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.image-2 {
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+
+.image-4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.image-6 {
+  grid-column-start: 2;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+
+.image-8 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+@media screen and (max-width: 1250px) {
+  .container {
+    flex-direction: column;
+  }
+  .images {
+    justify-content: center;
+  }
+}
